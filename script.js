@@ -10,15 +10,5 @@ function onEachFeature(feature, layer) {
 // by clustering the markers contained within
 let markers = L.markerClusterGroup();
 
-// adding geojson by fetch
-// of course you can use jquery, axios etc.
-fetch("map_airport.geojson")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    // use geoJSON
-    L.geoJSON(data, {
-      onEachFeature: onEachFeature,
-    }).addTo(map);
-  });
+var geojsonLayer = new L.GeoJSON.AJAX("map_airport.geojson");
+geojsonLayer.addTo(mymap);
