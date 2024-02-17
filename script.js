@@ -6,10 +6,6 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.name);
 }
 
-// L.MarkerClusterGroup extends L.FeatureGroup
-// by clustering the markers contained within
-let markers = L.markerClusterGroup();
-
 var counties = $.ajax({
           url:"https://gist.githubusercontent.com/maptastik/df8e483d5ac1c6cae3dc4a7c02ea9039/raw/9cd46849bddcfa90aab240772a12275408d6d8d0/kyCounties.geojson",
           dataType: "json",
