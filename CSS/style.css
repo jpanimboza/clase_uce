@@ -1,11 +1,11 @@
-html {
+html{
   height: 100%;
 }
-body {
+body{
    margin: 10;
   padding: 20;
 }
-h1 {
+h1{
   font-weight: bold;
   font-family: Arial;
   font-style: oblique;
