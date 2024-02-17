@@ -11,4 +11,4 @@ function onEachFeature(feature, layer) {
 let markers = L.markerClusterGroup();
 
 var geojsonLayer = new L.GeoJSON.AJAX("map_airport.geojson");
-geojsonLayer.addTo(mymap);
+geojsonLayer.addTo(map);
