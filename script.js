@@ -3,7 +3,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 function onEachFeature(feature, layer) {
-  layer.bindPopup(feature.properties.nazwa);
+  layer.bindPopup(feature.properties.name);
 }
 
 // adding geojson by fetch
