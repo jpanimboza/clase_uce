@@ -8,7 +8,7 @@ function onEachFeature(feature, layer) {
 
 // adding geojson by fetch
 // of course you can use jquery, axios etc.
-fetch("../static/wojewodztwa-medium.geojson")
+fetch("map_airport.geojson")
   .then(function (response) {
     return response.json();
   })
