@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // of course you can use jquery, axios etc.
 
 function onEachFeature(feature, layer) {
-  layer.bindPopup(feature.properties.iata_code);
+  layer.bindPopup(feature.properties.nazwa);
 }
 
 fetch("map_airport.geojson")
