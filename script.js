@@ -4,6 +4,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 // adding geojson by fetch
 // of course you can use jquery, axios etc.
+
+function onEachFeature(feature, layer) {
+  layer.bindPopup(feature.properties.nazwa);
+}
+
 fetch("map_airport.geojson")
   .then(function (response) {
     return response.json();
