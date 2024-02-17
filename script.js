@@ -6,6 +6,10 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.name);
 }
 
+// L.MarkerClusterGroup extends L.FeatureGroup
+// by clustering the markers contained within
+let markers = L.markerClusterGroup();
+
 // adding geojson by fetch
 // of course you can use jquery, axios etc.
 fetch("map_airport.geojson")
