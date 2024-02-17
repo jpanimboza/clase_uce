@@ -9,8 +9,6 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.iata_code);
 }
 
-let markers = L.markerClusterGroup();
-
 fetch("map_airport.geojson")
   .then(function (response) {
     return response.json();
