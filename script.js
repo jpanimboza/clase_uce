@@ -9,6 +9,8 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(feature.properties.nazwa);
 }
 
+let markers = L.markerClusterGroup();
+
 fetch("map_airport.geojson")
   .then(function (response) {
     return response.json();
