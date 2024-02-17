@@ -1,7 +1,10 @@
-  body {
-        margin: 10;
-        padding: 20;
-  }
+html {
+  height: 100%;
+}
+body {
+   margin: 10;
+  padding: 20;
+}
 h1 {
   font-weight: bold;
   font-family: Arial;
